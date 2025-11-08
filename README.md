@@ -6,7 +6,7 @@
 - Kelas         : KB1179 
 ---
 
-## 🖼️ Hasil Screenshot
+## 🖼️ Hasil Screenshot HD
 Tampilan aplikasi pada Android Emulator:  
 
 ### Splash Screen 1
