@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:uts_flutter/screen/splash_screen_1.dart';
 import 'package:uts_flutter/screen/splash_screen_2.dart';
 import 'package:uts_flutter/screen/splash_screen_3.dart';
+import 'package:uts_flutter/screen/login.dart';
 
 
 
@@ -25,6 +26,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/splash2': (context) => const SplashScreen2(),
         '/splash3': (context) => const SplashScreen3(),
+        '/login': (context) => const Login(),
 
       },    
     );
