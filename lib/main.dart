@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:uts_flutter/screen/splash_screen_1.dart';
+import 'package:uts_flutter/screen/splash_screen_2.dart';
+
 
 
 void main() {
@@ -19,8 +21,9 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
       ),
       home: const SplashScreen1(),
-
-    
+      routes: {
+        '/splash2': (context) => const SplashScreen2(),
+      },    
     );
   }
 }
