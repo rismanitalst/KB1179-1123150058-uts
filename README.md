@@ -1,16 +1,55 @@
-# uts_flutter
+# 📱 UTS Flutter - AsaMove App
 
-A new Flutter project.
+# 👤 Identitas
+- Nama Lengkap  : Rismanita Lestari  
+- NIM           : 1123150058  
+- Kelas         : KB1179 
+---
 
-## Getting Started
+## 🖼️ Hasil Screenshot
+Tampilan aplikasi pada Android Emulator:  
 
-This project is a starting point for a Flutter application.
+### Splash Screen 1
+![Splash Screen 1](assets/screenshots/splashPage1.png)
 
-A few resources to get you started if this is your first Flutter project:
+### Splash Screen 2
+![Splash Screen 2](assets/screenshots/splashPage2.png)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Splash Screen 3
+![Splash Screen 3](assets/screenshots/splashPage3.png)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Login Page
+![Login Page](assets/screenshots/login.png)
+
+
+---
+
+## 🚀 Cara Menjalankan Project
+1. Pastikan Flutter SDK sudah terinstall.  
+2. Jalankan perintah berikut di terminal:
+   ```bash
+   flutter pub get
+   flutter run
+````
+
+3. Pilih device (Android Emulator atau Chrome).
+4. Aplikasi akan terbuka dan menampilkan **Splash Screen 1** terlebih dahulu.
+
+---
+
+## 🧩 Deskripsi Singkat
+
+AsaMove adalah aplikasi pelacak aktivitas seperti Strava, dengan tema hijau (`Colors.green`) sesuai ketentuan UTS.
+Menampilkan 3 halaman splash screen dan halaman login dengan form **Phone Number** & **Password**, serta tombol login dan ikon media sosial.
+
+---
+
+## ⚠️ Catatan Kendala
+
+* Banyak error saat install Android Emulator
+
+---
+
+## 💚 Terima Kasih
+
+Dikerjakan untuk memenuhi UTS mata kuliah Pemrograman Mobile (Flutter).
