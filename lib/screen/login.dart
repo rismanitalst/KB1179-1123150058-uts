@@ -1,19 +1,26 @@
 import 'package:flutter/material.dart';
 
-class Login extends StatelessWidget {
+class Login extends StatefulWidget {
   const Login({super.key});
+
+  @override
+  State<Login> createState() => _LoginState();
+}
+
+class _LoginState extends State<Login> {
+  bool _obscurePassword = true;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey[100],
       body: SafeArea(
-        child: SingleChildScrollView( // biar bisa discroll
+        child: SingleChildScrollView(
           physics: const BouncingScrollPhysics(),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              // ini bagian header
+              // header
               Container(
                 width: double.infinity,
                 height: 200,
@@ -54,7 +61,7 @@ class Login extends StatelessWidget {
                     ),
                     const SizedBox(height: 24),
 
-                    // field phone number
+                    // phone
                     TextField(
                       keyboardType: TextInputType.phone,
                       decoration: InputDecoration(
@@ -62,6 +69,48 @@ class Login extends StatelessWidget {
                         hintText: 'Masukkan nomor telepon Anda',
                         prefixIcon: const Icon(Icons.phone_android_outlined,
                             color: Colors.green),
+                        filled: true,
+                        fillColor: const Color(0xFFF6F6F6),
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(12.0),
+                        ),
+                        enabledBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(12),
+                          borderSide: BorderSide(color: Colors.grey[300]!),
+                        ),
+                        focusedBorder: const OutlineInputBorder(
+                          borderRadius: BorderRadius.all(Radius.circular(12)),
+                          borderSide: BorderSide(
+                            color: Colors.green,
+                            width: 2,
+                          ),
+                        ),
+                      ),
+                    ),
+
+                    const SizedBox(height: 16),
+
+                    // password
+                    TextField(
+                      obscureText: _obscurePassword,
+                      decoration: InputDecoration(
+                        labelText: 'Password',
+                        hintText: 'Masukkan password Anda',
+                        prefixIcon: const Icon(Icons.lock_outline,
+                            color: Colors.green),
+                        suffixIcon: IconButton(
+                          icon: Icon(
+                            _obscurePassword
+                                ? Icons.visibility_off_outlined
+                                : Icons.visibility_outlined,
+                            color: Colors.grey,
+                          ),
+                          onPressed: () {
+                            setState(() {
+                              _obscurePassword = !_obscurePassword;
+                            });
+                          },
+                        ),
                         filled: true,
                         fillColor: const Color(0xFFF6F6F6),
                         border: OutlineInputBorder(
