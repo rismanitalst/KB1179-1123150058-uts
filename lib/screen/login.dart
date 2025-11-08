@@ -206,7 +206,25 @@ class _LoginState extends State<Login> {
                       ],
                     ),
 
-              
+                //baris untuk sign up    
+                const SizedBox(height: 16),
+                  Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: const [
+                Text(
+                "New here?",
+                style: TextStyle(color: Colors.black87),
+                ),
+                SizedBox(width: 4),
+                Text(
+                "Sign up",
+                style: TextStyle(
+                color: Colors.green,
+                fontWeight: FontWeight.bold,
+                  ),
+                ),
+                      ],
+                    ),
                   ],
                 ),
               ),
