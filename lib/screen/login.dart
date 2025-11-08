@@ -149,9 +149,9 @@ class _LoginState extends State<Login> {
                       content: Text("Login Success ✅",
                       textAlign: TextAlign.center),
                       duration: Duration(seconds: 2),
-                    ),
-                  );
-                },
+                              ),
+                            );
+                          },
                           child: const Text(
                           "Login",
                             style: TextStyle(
@@ -163,6 +163,19 @@ class _LoginState extends State<Login> {
                         ),
                       ),
                     ),
+                    const SizedBox(height: 20),
+
+Row(
+  children: const [
+    Expanded(child: Divider(thickness: 1)),
+    Padding(
+      padding: EdgeInsets.symmetric(horizontal: 8.0),
+      child: Text("Or"),
+    ),
+    Expanded(child: Divider(thickness: 1)),
+  ],
+),
+
                   ],
                 ),
               ),
