@@ -129,6 +129,40 @@ class _LoginState extends State<Login> {
                         ),
                       ),
                     ),
+                    // tombol login
+                    const SizedBox(height: 24),
+
+                    Center(
+                      child: SizedBox(
+                      width: 180,
+                      height: 50,
+                      child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.green,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                      ),
+                onPressed: () {
+                ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(
+                      content: Text("Login Success ✅",
+                      textAlign: TextAlign.center),
+                      duration: Duration(seconds: 2),
+                    ),
+                  );
+                },
+                          child: const Text(
+                          "Login",
+                            style: TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
                   ],
                 ),
               ),
