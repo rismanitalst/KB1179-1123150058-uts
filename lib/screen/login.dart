@@ -129,6 +129,23 @@ class _LoginState extends State<Login> {
                         ),
                       ),
                     ),
+
+                    Align(
+                      alignment: Alignment.centerRight,
+                      child: TextButton(
+                      onPressed: () {
+                      // isi link lupa password disini yak
+                      },
+                      child: const Text(
+                        "Forgot Password?",
+                      style: TextStyle(
+                      color: Colors.green,
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
+                ),
+              ),
+
                     // tombol login
                     const SizedBox(height: 24),
 
@@ -188,6 +205,8 @@ class _LoginState extends State<Login> {
                 _socialIcon('assets/images/ig.png'),
                       ],
                     ),
+
+              
                   ],
                 ),
               ),
