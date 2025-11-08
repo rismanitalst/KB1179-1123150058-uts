@@ -10,13 +10,13 @@
 Tampilan aplikasi pada Android Emulator:  
 
 ### Splash Screen 1
-![Splash Screen 1](assets/screenshots/splashPage1.png)
+![Splash Screen 1](assets/screenshoots/splashPage1.png)
 
 ### Splash Screen 2
-![Splash Screen 2](assets/screenshots/splashPage2.png)
+![Splash Screen 2](assets/screenshoots/splashPage2.png)
 
 ### Splash Screen 3
-![Splash Screen 3](assets/screenshots/splashPage3.png)
+![Splash Screen 3](assets/screenshoots/splashPage3.png)
 
 ### Login Page
 ![Login Page](assets/screenshots/login.png)
