@@ -165,22 +165,53 @@ class _LoginState extends State<Login> {
                     ),
                     const SizedBox(height: 20),
 
-Row(
-  children: const [
-    Expanded(child: Divider(thickness: 1)),
-    Padding(
-      padding: EdgeInsets.symmetric(horizontal: 8.0),
-      child: Text("Or"),
-    ),
-    Expanded(child: Divider(thickness: 1)),
-  ],
-),
+                  Row(
+                    children: const [
+                    Expanded(child: Divider(thickness: 1)),
+                    Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 8.0),
+                    child: Text("Or"),
+                    ),
+                    Expanded(child: Divider(thickness: 1)),
+                    ],
+                  ),
+                  const SizedBox(height: 40),
 
+            // path icon sosmed
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                _socialIcon('assets/images/google.png'),
+                const SizedBox(width: 16),
+                _socialIcon('assets/images/x.png'),
+                const SizedBox(width: 16),
+                _socialIcon('assets/images/ig.png'),
+                      ],
+                    ),
                   ],
                 ),
               ),
             ],
           ),
+        ),
+      ),
+    );
+  }
+
+// ini widget sosmed
+  Widget _socialIcon(String assetPath) {
+    return InkWell(
+      onTap: () {},
+      child: Container(
+        padding: const EdgeInsets.all(10),
+        decoration: BoxDecoration(
+          border: Border.all(color: Colors.grey[300]!),
+          borderRadius: BorderRadius.circular(12),
+        ),
+        child: Image.asset(
+          assetPath,
+          width: 30,
+          height: 30,
         ),
       ),
     );
