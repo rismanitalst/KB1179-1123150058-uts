@@ -19,7 +19,7 @@ Tampilan aplikasi pada Android Emulator:
 ![Splash Screen 3](assets/screenshoots/splashPage3.png)
 
 ### Login Page
-![Login Page](assets/screenshoots/login.png)
+![Login Page](assets/screenshoots/loginPage.png)
 
 
 ---
