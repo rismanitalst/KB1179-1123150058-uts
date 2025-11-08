@@ -7,10 +7,12 @@ class SplashScreen2 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
+      body: Stack(
+  children: [
+    Center(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
             Container(
               width: 250,
               height: 250,
@@ -79,6 +81,21 @@ class SplashScreen2 extends StatelessWidget {
           ],
         ),
       ),
+       const Positioned(
+      bottom: 20,
+      left: 0,
+      right: 0,
+      child: Text(
+        "NIM: 1123150058",
+        textAlign: TextAlign.center,
+        style: TextStyle(
+          color: Colors.grey,
+          fontSize: 12,
+        ),
+      ),
+    ),
+  ],
+),
     );
   }
 }
